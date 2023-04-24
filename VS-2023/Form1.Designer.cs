@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.button_Borovets = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // button_Borovets
+            // 
+            this.button_Borovets.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button_Borovets.Location = new System.Drawing.Point(30, 29);
+            this.button_Borovets.Name = "button_Borovets";
+            this.button_Borovets.Size = new System.Drawing.Size(120, 44);
+            this.button_Borovets.TabIndex = 0;
+            this.button_Borovets.Text = "Боровець";
+            this.button_Borovets.UseVisualStyleBackColor = false;
+            this.button_Borovets.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.button_Borovets);
+            this.Name = "Form1";
+            this.Text = "спільний проєкт ПІ-20";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button_Borovets;
     }
 }
 
