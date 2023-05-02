@@ -13,6 +13,7 @@ namespace VS_2023
     public partial class Form1 : Form
     {
         Borovets f1 = null;
+        balanovich f2 = null;
         public Form1()
         {
             InitializeComponent();
@@ -39,6 +40,30 @@ namespace VS_2023
                     if (!f1.Focused)
                     f1.Focus();
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (f2 == null)
+            {
+                f2 = new balanovich();
+                f2.Show();
+            }
+            else
+            if (f2.IsDisposed)
+            {
+                f2 = new balanovich();
+                f2.Show();
+            }
+            else
+            {
+                if (f1.WindowState == FormWindowState.Minimized)
+                    f1.WindowState = FormWindowState.Normal;
+                else
+                    if (!f1.Focused)
+                    f1.Focus();
+            }
+
         }
     }
 }
